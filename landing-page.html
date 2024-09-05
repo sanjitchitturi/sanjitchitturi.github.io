@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripMancer | Travel Optimized</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .register-btn {
+      background-color: #222;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 500;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .register-btn:hover {
+      background-color: #444;
+    }
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .cta-btn {
+      background-color: #444;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #666;
+    }
+
+    .hero-image img {
+      border-radius: 30px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    section {
+      margin-top: 80px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+
+    .about,
+    .team {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .about p,
+    .team p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .team-member {
+      margin-bottom: 30px;
+    }
+
+    .team-member h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .team-member p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .contact-form {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      border-radius: 20px;
+      background-color: #222;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-form button {
+      background-color: #444;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #666;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+      }
+
+      .team-member {
+        margin-bottom: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">TripMancer</div>
+    <button class="register-btn">Register</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Travel Optimized</h1>
+      <p>Efficient travel solutions, expertly designed.</p>
+      <button class="cta-btn">Start Your Journey</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://via.placeholder.com/500" alt="Hero Image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2 class="section-title">About TripMancer</h2>
+    <p>TripMancer is an AI-driven travel agency that provides efficient, expertly designed travel solutions. Our team
+      of experts combines cutting-edge technology with years of travel planning experience to optimize your trips seamlessly.</p>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team">
+    <h2 class="section-title">Meet the Founders</h2>
+
+    <div class="team-member">
+      <h3>Sanjit Chitturi</h3>
+      <p>Founder</p>
+      <p>Sanjit is passionate about travel and technology, and his vision is to revolutionize travel planning with AI.</p>
+    </div>
+
+    <div class="team-member">
+      <h3>Justin Anthony</h3>
+      <p>Co-founder</p>
+      <p>Justin is dedicated to making your travel experiences smoother and smarter through innovative
+        technology.</p>
+    </div>
+  </section>
+
+  <!-- Contact Us Form -->
+  <section class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-form">
+      <form action="mailto:tripmancer@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 QuantaNine</p>
+    <p>Email: tripmancer@gmail.com</p>
+  </footer>
+
+</body>
+
+</html>
