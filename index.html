@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMancer</title>
+    <!-- Favicon Link -->
+    <link rel="icon" href="images/tripmancer-icon.ico" type="image/x-icon">
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@700&family=Cabin:wght@400&display=swap">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full flex justify-between items-center p-6 bg-black text-white z-50 transition-all">
+        <div class="logo text-2xl font-orbitron font-bold">TripMancer</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero flex flex-col items-center justify-center bg-gradient-to-br from-black to-blue-900 text-center py-20 px-4">
+        <h1 class="text-5xl font-poppins text-white mb-4">
+            Travel <span id="dynamic-word" class="transition-opacity duration-500 opacity-100">Optimized.</span>
+        </h1>
+
+        <h3>
+            Efficient travel solutions, expertly designed.
+        </h3>
+    </section>
+
+    <!-- Main Container -->
+    <div class="main-container mt-20 flex flex-col items-center text-center bg-black py-20">
+        <h1 class="text-4xl font-poppins font-bold text-white mb-6">This is TripMancer.</h1>
+        <p class="text-white text-lg mb-6">
+            Discover new destinations and optimize your travel experience with us.
+        </p>
+        <a href="#products" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg">Explore</a>
+    </div>
+
+    <!-- Products Section -->
+    <div id="products" class="product-grid py-20 px-4 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="product-card p-6 bg-white rounded-lg shadow-lg">
+            <img src="images/feature1-image.jpg" alt="Product 1" class="mb-4">
+            <h3 class="text-xl font-poppins font-bold mb-2">Personalized Itineraries.</h3>
+            <p class="font-cabin">Our AI-powered system crafts personalized itineraries based on your travel preferences, past trips, and current trends. Whether you're looking for off-the-beaten-path adventures or a luxurious escape, TripMancer will design an itinerary that caters to your exact needs. Discover hidden gems, curated dining experiences, and tailor-made activities for every destination.</p>
+        </div>
+        <div class="product-card p-6 bg-white rounded-lg shadow-lg">
+            <img src="images/feature2-image.jpg" alt="Product 2" class="mb-4">
+            <h3 class="text-xl font-poppins font-bold mb-2">Real-Time Travel Alerts.</h3>
+            <p class="font-cabin">Stay ahead of the curve with TripMancer’s real-time travel alerts. Get instant notifications about flight delays, gate changes, weather disruptions, and more. We keep you informed every step of the way, so you can travel confidently without unexpected surprises. Be in the know and make informed decisions throughout your journey.</p>
+        </div>
+        <div class="product-card p-6 bg-white rounded-lg shadow-lg">
+            <img src="images/feature3-image.jpg" alt="Product 3" class="mb-4">
+            <h3 class="text-xl font-poppins font-bold mb-2">Seamless Bookings.</h3>
+            <p class="font-cabin">Say goodbye to juggling multiple booking platforms. With TripMancer, you can book flights, hotels, car rentals, and even experiences directly through our platform. Our system seamlessly connects you with top travel providers, ensuring that your reservations are all in one place. Plus, we help you find the best deals tailored to your budget and preferences.</p>
+        </div>
+        <div class="product-card p-6 bg-white rounded-lg shadow-lg">
+            <img src="images/feature4-image.jpg" alt="Product 4" class="mb-4">
+            <h3 class="text-xl font-poppins font-bold mb-2">Travel Expense Tracking.</h3>
+            <p class="font-cabin">Keep track of your travel expenses effortlessly with our integrated expense tracking system. From booking confirmations to dining receipts, TripMancer organizes and categorizes your spending. View detailed breakdowns of your trip costs, set budgets, and receive alerts when you're close to exceeding limits, ensuring you're always in control of your finances.</p>
+        </div>
+    </div>
+
+    <!-- Brief Section -->
+    <div class="brief py-20 text-white bg-black text-center">
+        <p class="text-lg font-cabin mb-6">At TripMancer, we aim to reinvent the way you travel with AI-powered solutions.</p>
+        <a href="#contact" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg mt-6 inline-block">Learn More</a>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team-section py-20 bg-gray-900 text-white text-center">
+        <h2 class="text-3xl font-poppins font-bold mb-12">Team TripMancer</h2>
+        <div class="flex flex-wrap justify-center space-x-8">
+            <div class="team-member bg-gray-800 p-6 rounded-lg mb-6">
+                <img src="images/sanjit-chitturi.jpg" alt="Team Member" class="w-24 h-24 rounded-full mb-4 mx-auto">
+                <p class="font-bold">Sanjit Chitturi</p>
+                <p class="font-cabin">Founder</p>
+            </div>
+            <div class="team-member bg-gray-800 p-6 rounded-lg mb-6">
+                <img src="images/justin-anthony.jpg" alt="Team Member" class="w-24 h-24 rounded-full mb-4 mx-auto">
+                <p class="font-bold">Justin Anthony</p>
+                <p class="font-cabin">Co-Founder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-20 bg-gray-900 text-white">
+        <h2 class="text-3xl font-poppins font-bold text-center mb-12">Contact Us</h2>
+        <div class="flex justify-center">
+            <form class="bg-gray-800 p-8 rounded-lg max-w-lg w-full">
+                <input type="text" placeholder="Name" class="w-full p-3 mb-4 rounded-lg text-gray-900">
+                <input type="email" placeholder="Email" class="w-full p-3 mb-4 rounded-lg text-gray-900">
+                <textarea placeholder="Message" class="w-full p-3 mb-4 rounded-lg text-gray-900"></textarea>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg w-full">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-center text-white">
+        <div class="logo text-2xl font-orbitron font-bold mb-4">TripMancer</div>
+        <p>&copy; 2024 QuantaNine. All rights reserved.</p>
+    </footer>
+</body>
+</html>
