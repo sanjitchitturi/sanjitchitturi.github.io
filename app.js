@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const dynamicWord = document.getElementById('dynamic-word');
-    const words = ['Optimized.', 'Efficient.', 'Reinvented.', 'Seamless.'];
+    const words = ['Optimized.', 'Efficient.', 'Re-invented.', 'Seamless.'];
     let index = 0;
 
     function changeWord() {
